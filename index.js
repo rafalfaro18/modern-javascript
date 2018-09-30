@@ -61,3 +61,16 @@ const popeye = new Person('Popeye');
 console.log(popeye.getName());
 Person.salute();
 /****************************/
+/******** Promises #1 ********/
+const delay = new Promise((resolve, reject) => {
+  if(true){
+    setTimeout(() => {
+      resolve('Done.')
+    }, 3000);
+  } else {
+    reject(error)
+  }
+})
+delay.then((result) => { console.log(result, 'Also done.');
+ })
+/*****************************/
