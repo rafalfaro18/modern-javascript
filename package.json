@@ -1,0 +1,19 @@
+{
+  "name": "modern-javascript",
+  "version": "1.0.0",
+  "description": "modern javascript examples",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafalfaro18/modern-javascript.git"
+  },
+  "author": "Rafael Alfaro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rafalfaro18/modern-javascript/issues"
+  },
+  "homepage": "https://github.com/rafalfaro18/modern-javascript#readme"
+}
