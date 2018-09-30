@@ -26,3 +26,14 @@ try {
 }
 console.log(array_1);
 /****************************/
+/********** LET #1 **********/
+if (true){
+  let message_1 = 'Hello World'
+  console.log(message_1);
+}
+try {
+  console.log(message_1);//should throw an error because message_1 scope is only inside if
+} catch (error) {
+  console.log(error.message);
+}
+/****************************/
