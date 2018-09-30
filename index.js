@@ -43,3 +43,16 @@ const title = `Hello,
 Value Is ${value}`
 console.log(title);
 /****************************/
+/******** Classes #1 ********/
+class Person {
+    constructor (name) {
+      this.name = name
+    }
+
+    getName () {
+      return this.name
+    }
+}
+const popeye = new Person('Popeye');
+console.log(popeye.getName());
+/****************************/
