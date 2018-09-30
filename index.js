@@ -63,14 +63,10 @@ Person.salute();
 /****************************/
 /******** Promises #1 ********/
 const delay = new Promise((resolve, reject) => {
-  if(true){
-    setTimeout(() => {
-      const result = 'Done.'
-      resolve(result)
-    }, 3000);
-  } else {
-    reject(error)
-  }
+  setTimeout(() => {
+    const result = 'Done.'
+    resolve(result)
+  }, 3000);
 })
 delay.then((result) => { console.log(result, 'Also done.'); })
 /*****************************/
