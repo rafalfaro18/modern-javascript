@@ -65,12 +65,27 @@ Person.salute();
 const delay = new Promise((resolve, reject) => {
   if(true){
     setTimeout(() => {
-      resolve('Done.')
+      const result = 'Done.'
+      resolve(result)
     }, 3000);
   } else {
     reject(error)
   }
 })
-delay.then((result) => { console.log(result, 'Also done.');
- })
+delay.then((result) => { console.log(result, 'Also done.'); })
+/*****************************/
+/******** Promises #2 ********/
+async function delayed() {
+  const delay2 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const result = 'Done.'
+      resolve(result)
+    }, 6000);
+  })
+
+  let message_result = await delay2
+  console.log(message_result);
+}
+
+delayed();
 /*****************************/
