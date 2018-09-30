@@ -85,3 +85,22 @@ async function delayed() {
 
 delayed();
 /*****************************/
+/******** Promises #3 ********/
+const delay3 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    const result = 'Done 3.'
+    resolve(result)
+  }, 6000);
+})
+
+const delay4 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    const result = 'Done 4.'
+    resolve(result)
+  }, 9000);
+})
+
+Promise.all([delay3, delay4]).then(values => {
+  console.log(values);
+})
+/*****************************/
