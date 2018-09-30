@@ -37,3 +37,8 @@ try {
   console.log(error.message);
 }
 /****************************/
+/***** Interpolation #1 *****/
+let value = 1;
+const title = `Hello ${value}`
+console.log(title);
+/****************************/
