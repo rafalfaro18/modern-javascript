@@ -52,7 +52,12 @@ class Person {
     getName () {
       return this.name
     }
+
+    static salute(){
+      console.log('Hello');
+    }
 }
 const popeye = new Person('Popeye');
 console.log(popeye.getName());
+Person.salute();
 /****************************/
